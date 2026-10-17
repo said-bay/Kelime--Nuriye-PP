@@ -1,47 +1,67 @@
-Kelime-i Nuriye için Gizlilik Politikası
+# Kelime-i Nuriye Gizlilik Politikası
 
-Son Güncelleme: 2 Kasım 2025
+**Son güncelleme:** 18 Ekim 2026
 
-"Kelime-i Nuriye" ("Uygulama") olarak gizliliğinize önem veriyoruz. Bu uygulama, kullanıcı gizliliğini ön planda tutarak tasarlanmıştır.
+Bu gizlilik politikası, Ahmet Said Bay ("Geliştirici") tarafından geliştirilen **Kelime-i Nuriye** mobil uygulaması ("Uygulama") için geçerlidir. Burada hangi verileri topladığımızı, neden topladığımızı ve haklarınızı açıklıyoruz.
 
-1. Topladığımız Bilgiler
+## 1. Hesap açmadan kullanım
 
-Uygulama, sizden hiçbir kişisel tanımlayıcı bilgiyi (İsim, E-posta Adresi, Konum vb.) toplamaz, saklamaz veya sunucularımıza göndermez.
+Uygulamanın temel kelime oyunu hesap gerektirmez. Bu modda ilerlemeniz cihazınızda (AsyncStorage) saklanır:
 
-Uygulamanın çalışması için gerekli olan tüm veriler, yalnızca ve doğrudan sizin cihazınızda yerel olarak saklanır.
+- Oyun istatistikleri, seri ve rekorlar
+- Kelime defteri (yanlış cevaplanan kelimeler) ve öğrenilen kelimeler
+- Tekrar (SRS) planı ve ayar tercihleri (müzik, bildirim saati vb.)
 
-2. Yerel Olarak Saklanan Veriler
+Topluluk oyunları ve online özellikler için cihazınıza **anonim bir kimlik** atanır. Bu kimlik sizi kişisel olarak tanımlamaz.
 
-Uygulama, oyun deneyiminizi iyileştirmek için aşağıdaki verileri cihazınızın yerel depolama alanına (AsyncStorage) kaydeder:
+## 2. Hesap açtığınızda topladığımız veriler
 
-Oyun İstatistikleri: Haftalık doğru ve yanlış cevap sayılarınız (başarı oranınızı hesaplamak için).
+Online düello, arkadaşlar, Günün Cümlesi sıralaması gibi özellikler için isteğe bağlı olarak hesap açabilirsiniz. Bu durumda Google Firebase sunucularında şunlar saklanır:
 
-Kelime Defteri: Oyunda yanlış cevapladığınız kelimelerin listesi.
+- **Hesap bilgileri:** e-posta adresi ve kullanıcı adı. Şifreniz Firebase Authentication tarafından şifrelenmiş olarak tutulur; Geliştirici şifrenizi göremez.
+- **Profil ve oyun verileri:** avatar, puan, rütbe, başarımlar, oyun sonuçları ve sıralamalar
+- **Sosyal veriler:** arkadaş kodu ve arkadaş listesi
+- **Gönderdiğiniz içerikler:** Günün Cümlesi cevapları, kelime önerileri, yazarlık başvuruları, şikâyetler ve destek sohbeti mesajları
 
-Öğrenilen Kelimeler: Doğru bildiğiniz ve tekrar sorulmasını istemediğiniz kelimelerin listesi.
+## 3. Üçüncü taraf hizmetler
 
-Ayar Tercihleri: Oyun müziğinin açık veya kapalı olma durumu.
+| Hizmet | Amaç | Paylaşılan veri |
+|---|---|---|
+| Google Firebase (Authentication, Firestore, Realtime Database, Cloud Functions) | Hesaplar, online oyunlar, veri saklama | Yukarıda 2. maddede sayılanlar |
+| RevenueCat | Uygulama içi satın almaları ("çay/kahve ısmarla") doğrulamak | Anonim satın alma kimliği ve satın alma geçmişi |
+| OneSignal | Bildirim göndermek | Cihaz bildirim kimliği, uygulama sürümü, hatırlatma tercihi. Hesabınız varsa kullanıcı kimliğiniz (uid). |
+| Apple App Store / Google Play | İndirme ve ödeme | Mağazaların kendi gizlilik politikaları geçerlidir |
 
-Sıfırlama Tarihi: Haftalık istatistik sıfırlamasının ne zaman yapılacağını takip etmek için bir tarih bilgisi.
+Uygulamada **reklam yoktur**. Verileriniz reklam amacıyla satılmaz veya paylaşılmaz. Uygulama **konum verisi toplamaz**.
 
-Bu verilerin tamamı cihazınızda saklanır ve sizin dışınızda kimse tarafından erişilemez.
+## 4. Verilerin kullanım amacı
 
-3. Verilerin Kullanımı ve Silinmesi
+Veriler yalnızca şu amaçlarla kullanılır: uygulamanın özelliklerini çalıştırmak, sıralama ve arkadaş özelliklerini sağlamak, destek taleplerine cevap vermek, kötüye kullanımı ve hileyi önlemek, isteğe bağlı hatırlatma bildirimleri göndermek.
 
-Bu veriler yalnızca uygulamanın temel işlevlerini (istatistik gösterme, bilinen kelimeleri sormama vb.) yerine getirmek için kullanılır.
+## 5. Verilerin saklanması ve silinmesi
 
-Bu verileri dilediğiniz zaman uygulamanın içindeki "Ayarlar" menüsünde bulunan "Verileri Sıfırla" veya "Öğrenilen Kelimeleri Sıfırla" butonlarını kullanarak kalıcı olarak silebilirsiniz.
+- Cihazdaki veriler uygulama silindiğinde ya da **Ayarlar** menüsündeki sıfırlama düğmeleriyle silinir.
+- Hesabınızı uygulamadaki hesap ekranında bulunan "Hesabımı Sil" düğmesiyle kalıcı olarak silebilirsiniz. Silme işlemi hesap bilginizi, profilinizi, skorlarınızı, arkadaşlıklarınızı, gönderilerinizi ve destek mesajlarınızı kaldırır.
+- Silme talebi için aşağıdaki e-posta adresine de yazabilirsiniz.
 
-4. Üçüncü Taraf Erişimi
+## 6. Haklarınız (KVKK)
 
-Uygulama, yerel olarak saklanan bu verileri hiçbir üçüncü taraf (reklam ağları, analiz servisleri vb.) ile paylaşmaz.
+6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 11. maddesi kapsamında şu haklara sahipsiniz: verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltilmesini veya silinmesini isteme ve itiraz etme. Taleplerinizi aşağıdaki e-posta adresine iletebilirsiniz.
 
-5. Politikadaki Değişiklikler
+Firebase, RevenueCat ve OneSignal hizmetleri verileri Türkiye dışındaki sunucularda işleyebilir. Hesap açarak bu aktarıma onay vermiş olursunuz.
 
-Bu gizlilik politikası güncellenebilir. Herhangi bir değişiklik olması durumunda bu metin güncellenecektir.
+## 7. Uygulamanın devredilmesi
 
-6. İletişim
+Uygulama başka bir geliştiriciye veya şirkete devredilir ya da satılırsa, uygulamanın çalışması için gerekli kullanıcı verileri yeni sahibine aktarılabilir. Yeni sahip bu politikaya veya en az bu kadar koruyucu bir politikaya uymakla yükümlü olur. Böyle bir değişiklik uygulama içinde duyurulur.
 
-Gizlilik politikamızla ilgili herhangi bir sorunuz olursa, lütfen bizimle iletişime geçin:
+## 8. Çocukların gizliliği
 
-E-posta: ahmetsaidbay@hotmail.com
+Hesap açmadan kullanılan temel oyun her yaşa uygundur. 13 yaşından küçük çocukların hesap açmadan önce ebeveyn izni alması gerekir. Bilerek 13 yaş altı çocuklardan kişisel veri toplamayız.
+
+## 9. Değişiklikler
+
+Bu politika güncellenebilir. Önemli değişiklikler uygulama içinde duyurulur, güncel tarih bu sayfanın başında yer alır.
+
+## 10. İletişim
+
+**E-posta:** ahmetsaidbay2@gmail.com
